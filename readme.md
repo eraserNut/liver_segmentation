@@ -13,9 +13,9 @@
 
 ### Experiment results <a name="results"></a>
 
-| <sub>Model</sub> | <sub>Dice</sub> | <sub>F1</sub> | <sub>Backbone</sub> |  <sub>use </br> pretrained </sub>|
-|:-----------------------------:|:----:|:---------------------:|:--------------------:|:--------------------:|
-|<sub>Unet</sub>| 0.9494 | 0.9503 | <sub>resnet18</sub>|yes|
-|<sub>Unet++</sub>| - | - | <sub>resnet18</sub>|yes|
-|<sub>FPN</sub>| 0.9493 | 0.9491 | <sub>resnet18</sub>|yes|
-|<sub>DAF</sub>| - | - | <sub>resnext101</sub>|yes|
+| <sub>Model</sub> | <sub>Dice</sub> | <sub>F1</sub> | <sub>Backbone</sub> | <sub>Batch size</sub>| <sub>Use pretrained </sub>|
+|:-----------------------------:|:----:|:---------------------:|:--------------------:|:--------------------:|:--------------------:|
+|<sub>Unet</sub>| 0.9494 | 0.9503 | <sub>Resnet-18</sub>|4|yes|
+|<sub>Unet++</sub>| - | - | <sub>Resnet-18</sub>|2|yes|
+|<sub>FPN</sub>| 0.9493 | 0.9491 | <sub>Resnet-18</sub>|4|yes|
+|<sub>DAF</sub>| - | - | <sub>ResNext-101</sub>|4|yes|
