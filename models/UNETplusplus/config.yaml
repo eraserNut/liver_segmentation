@@ -1,0 +1,8 @@
+iter_num: 60
+train_batch_size: 2
+lr: 0.005
+lr_step: 20
+lr_decay: 50
+weight_decay: 0.01
+momentum: 0.9
+resize: True
