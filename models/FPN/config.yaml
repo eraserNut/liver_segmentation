@@ -6,3 +6,4 @@ lr_decay: 50
 weight_decay: 0.01
 momentum: 0.9
 resize: True
+resizeTo: 448

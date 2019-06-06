@@ -25,7 +25,7 @@ torch.cuda.set_device(0)
 
 # Load parameters
 ckpt_path = './ckpt'
-exp_name = 'UNETplusplus' # specific model name
+exp_name = 'DAF' # specific model name
 args_config = os.path.join('./models', exp_name, 'config.yaml')
 args = yaml.load(open(args_config))
 
@@ -39,12 +39,12 @@ start_epoch = 0 # start from epoch 0 or last checkpoint epoch
 # Data
 if args['resize']:
     transform = transforms.Compose([
-        transforms.Resize(448),
+        transforms.Resize(args['resizeTo']),
         transforms.ToTensor(),
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ])
     target_transform = transforms.Compose([
-        transforms.Resize(448),
+        transforms.Resize(args['resizeTo']),
         transforms.ToTensor(),
     ])
 else:
@@ -64,8 +64,8 @@ train_loader = DataLoader(train_set, batch_size=args['train_batch_size'], num_wo
 # Model
 print('==> Building model..')
 # net = ResNetUNet(n_class=1).cuda()
-net = UNETplusplus(n_class=1).cuda()
-# net = DAF().cuda()
+# net = UNETplusplus(n_class=1).cuda()
+net = DAF().cuda()
 # net = FPN().cuda()
 # summary(net, (3, 448, 448)) #summary for test model except for fpn
 
