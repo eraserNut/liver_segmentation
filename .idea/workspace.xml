@@ -5,12 +5,6 @@
       <change beforePath="$PROJECT_DIR$/../DAF" beforeDir="false" afterPath="$PROJECT_DIR$/../DAF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UNET" beforeDir="false" afterPath="$PROJECT_DIR$/../UNET" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UNetPlusPlus_TF" beforeDir="false" afterPath="$PROJECT_DIR$/../UNetPlusPlus_TF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/DAF/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/DAF/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/FPN/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/FPN/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Resnet18_UNET/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/Resnet18_UNET/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/UNETplusplus/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/UNETplusplus/config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,8 +52,8 @@
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="360">
-                <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+              <first_editor relative-caret-position="330">
+                <caret line="22" column="87" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
               </first_editor>
               <second_editor />
             </state>
@@ -303,7 +297,7 @@
       <updated>1559549653371</updated>
       <workItem from="1559549656491" duration="257000" />
       <workItem from="1559550202445" duration="68334000" />
-      <workItem from="1559746343211" duration="8667000" />
+      <workItem from="1559746343211" duration="8784000" />
     </task>
     <task id="LOCAL-00001" summary="add readme">
       <created>1559740525338</created>
@@ -368,11 +362,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559747675920</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add readme">
+      <created>1559808832573</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1559808832573</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77258000" />
+    <option name="totallyTimeSpent" value="77375000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -418,9 +419,9 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="modify readme" />
-    <MESSAGE value="add readme" />
     <MESSAGE value="modify read me" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify read me" />
+    <MESSAGE value="add readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="add readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -676,8 +677,8 @@
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="360">
-            <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+          <first_editor relative-caret-position="330">
+            <caret line="22" column="87" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
           </first_editor>
           <second_editor />
         </state>
