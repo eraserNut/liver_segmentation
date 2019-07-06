@@ -58,7 +58,38 @@ class SegmentationBlock(nn.Module):
         return self.block(x)
 
 
-class FPN(Model):
+class DUpsampling(nn.Module):
+    def __init__(self, inplanes, scale, num_class=21, pad=0):
+        super(DUpsampling, self).__init__()
+        ## W matrix
+        self.conv_w = nn.Conv2d(inplanes, num_class * scale * scale, kernel_size=1, padding=pad, bias=False)
+        ## P matrix
+        self.conv_p = nn.Conv2d(num_class * scale * scale, inplanes, kernel_size=1, padding=pad, bias=False)
+
+        self.scale = scale
+
+    def forward(self, x):
+        x = self.conv_w(x)
+        N, C, H, W = x.size()
+        # N, W, H, C
+        x_permuted = x.permute(0, 3, 2, 1)
+
+        # N, W, H*scale, C/scale
+        x_permuted = x_permuted.contiguous().view((N, W, H * self.scale, int(C / (self.scale))))
+
+        # N, H*scale, W, C/scale
+        x_permuted = x_permuted.permute(0, 2, 1, 3)
+        # N, H*scale, W*scale, C/(scale**2)
+        x_permuted = x_permuted.contiguous().view(
+            (N, W * self.scale, H * self.scale, int(C / (self.scale * self.scale))))
+
+        # N, C/(scale**2), H*scale, W*scale
+        x = x_permuted.permute(0, 3, 1, 2)
+
+        return x
+
+
+class FPN_Dup(Model):
 
     def __init__(
             self,
@@ -89,8 +120,10 @@ class FPN(Model):
         self.s3 = SegmentationBlock(pyramid_channels, segmentation_channels, n_upsamples=1)
         self.s2 = SegmentationBlock(pyramid_channels, segmentation_channels, n_upsamples=0)
 
-        self.dropout = nn.Dropout2d(p=dropout, inplace=True)
-        self.final_conv = nn.Conv2d(segmentation_channels, final_channels, kernel_size=1, padding=0)
+        self.dupsample = DUpsampling(inplanes=segmentation_channels, scale=4, num_class=1)
+
+        # self.dropout = nn.Dropout2d(p=dropout, inplace=True)
+        # self.final_conv = nn.Conv2d(segmentation_channels, final_channels, kernel_size=1, padding=0)
 
         self.initialize()
 
@@ -115,8 +148,9 @@ class FPN(Model):
 
         x = s5 + s4 + s3 + s2
 
-        x = self.dropout(x)
-        x = self.final_conv(x)
+        x = self.dupsample(x)
+        # x = self.dropout(x)
+        # x = self.final_conv(x)
 
-        x = F.interpolate(x, scale_factor=4, mode='bilinear', align_corners=True)
+        # x = F.interpolate(x, scale_factor=4, mode='bilinear', align_corners=True)
         return F.sigmoid(x)

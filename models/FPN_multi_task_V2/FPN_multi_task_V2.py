@@ -24,7 +24,6 @@ class Conv3x3GNReLU(nn.Module):
         return x
 
 
-
 class FPNBlock(nn.Module):
     def __init__(self, pyramid_channels, skip_channels):
         super().__init__()
@@ -58,7 +57,7 @@ class SegmentationBlock(nn.Module):
         return self.block(x)
 
 
-class FPN(Model):
+class FPN_multi_task_V2(Model):
 
     def __init__(
             self,
@@ -83,14 +82,14 @@ class FPN(Model):
         self.p4 = FPNBlock(pyramid_channels, encoder_channels[1])
         self.p3 = FPNBlock(pyramid_channels, encoder_channels[2])
         self.p2 = FPNBlock(pyramid_channels, encoder_channels[3])
+        self.p1 = FPNBlock(pyramid_channels, encoder_channels[3])
 
-        self.s5 = SegmentationBlock(pyramid_channels, segmentation_channels, n_upsamples=3)
-        self.s4 = SegmentationBlock(pyramid_channels, segmentation_channels, n_upsamples=2)
-        self.s3 = SegmentationBlock(pyramid_channels, segmentation_channels, n_upsamples=1)
-        self.s2 = SegmentationBlock(pyramid_channels, segmentation_channels, n_upsamples=0)
+        self.s1 = SegmentationBlock(pyramid_channels, segmentation_channels, n_upsamples=0)
 
-        self.dropout = nn.Dropout2d(p=dropout, inplace=True)
+        self.dropout = nn.Dropout2d(p=dropout)
+        self.dropout_c = nn.Dropout2d(p=dropout)
         self.final_conv = nn.Conv2d(segmentation_channels, final_channels, kernel_size=1, padding=0)
+        self.final_conv_c = nn.Conv2d(segmentation_channels, final_channels, kernel_size=1, padding=0)
 
         self.initialize()
 
@@ -107,16 +106,22 @@ class FPN(Model):
         p4 = self.p4([p5, c4])
         p3 = self.p3([p4, c3])
         p2 = self.p2([p3, c2])
+        p1 = self.p1([p2, c1])
 
-        s5 = self.s5(p5)
-        s4 = self.s4(p4)
-        s3 = self.s3(p3)
-        s2 = self.s2(p2)
+        s1 = self.s1(p1)
 
-        x = s5 + s4 + s3 + s2
+        # x = s5 + s4 + s3 + s2
 
-        x = self.dropout(x)
+        x = self.dropout(s1)
+        x_c = self.dropout_c(s1)
         x = self.final_conv(x)
+        x_c = self.final_conv_c(x_c)
 
-        x = F.interpolate(x, scale_factor=4, mode='bilinear', align_corners=True)
-        return F.sigmoid(x)
+        x = F.interpolate(x, scale_factor=2, mode='bilinear', align_corners=True)
+        x_c = F.interpolate(x_c, scale_factor=2, mode='bilinear', align_corners=True)
+        if self.training:
+            return F.sigmoid(x), F.sigmoid(x_c)
+            # return F.sigmoid(x)
+        else:
+            return F.sigmoid(x), F.sigmoid(x_c)
+            # return F.sigmoid(x)

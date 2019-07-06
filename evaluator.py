@@ -68,7 +68,7 @@ class Evaluator_Precision(object):
         self.num = 0
     def add_batch(self, pred, target):
         tp = (pred * target).sum(axis=0).sum(axis=0)
-        current_precision = tp / pred.sum(axis=0).sum(axis=0)
+        current_precision = tp / pred.sum(axis=0).sum(axis=0) if pred.sum(axis=0).sum(axis=0) != 0 else 0
         self.precisionAll += current_precision
         self.num += 1
     def get_Precision(self):
@@ -99,7 +99,7 @@ class Evaluator_F1(object):
         self.eval_recall.add_batch(pred, target)
         precision = self.eval_pre.get_Precision()
         recall = self.eval_recall.get_recall()
-        self.f1All += 2 * (precision * recall) / (precision + recall)
+        self.f1All += 2 * (precision * recall) / (precision + recall) if (precision * recall) / (precision + recall) != 0 else 0
         self.num += 1
     def get_F1(self):
         assert (self.num != 0)

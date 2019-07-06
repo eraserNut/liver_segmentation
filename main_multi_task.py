@@ -10,11 +10,11 @@ from torch.utils.data import DataLoader
 from torchvision import transforms
 
 from config_path import training_root, testing_root
-from dataset import ImageFolder
+from dataset_multi_task import ImageFolder_multi_task
 from evaluator import *
 from misc import AvgMeter, check_mkdir, progress_bar, crf_refine
 from models import *
-from loss import Dice_loss
+from loss import *
 import argparse
 import yaml
 from PIL import Image
@@ -27,9 +27,7 @@ torch.cuda.set_device(0)
 ckpt_path = './ckpt_lesion'
 # ckpt_path = './ckpt_tumor'
 # exp_name = 'Resnet18_UNET' # specific model name
-# exp_name = 'DAF' # specific model name
-# exp_name = 'FPN' # specific model name
-exp_name = 'FPN_Dup' # specific model name
+exp_name = 'FPN_multi_task' # specific model name
 args_config = os.path.join('./models', exp_name, 'config.yaml')
 args = yaml.load(open(args_config))
 
@@ -63,7 +61,7 @@ else:
     ])
 to_pil = transforms.ToPILImage()
 
-train_set = ImageFolder(training_root, None, transform, target_transform)
+train_set = ImageFolder_multi_task(training_root, None, transform, target_transform)
 train_loader = DataLoader(train_set, batch_size=args['train_batch_size'], num_workers=12, shuffle=True)
 
 
@@ -73,7 +71,12 @@ print('==> Building model..')
 # net = UNETplusplus(n_class=1).cuda()
 # net = DAF().cuda()
 # net = FPN().cuda()
-net = FPN_Dup().cuda()
+# net = FPN_DS().cuda()
+# net = FPN_DS2().cuda()
+# net = FPN_DS_V3().cuda()
+# net = FPN_DS_V4().cuda()
+net = FPN_multi_task().cuda()
+# net = FPN_multi_task_V2().cuda()
 # summary(net, (3, 448, 448)) #summary for test model except for fpn
 
 if flag.resume or flag.test:
@@ -97,6 +100,7 @@ optimizer = optim.SGD([
 check_mkdir(ckpt_path)
 check_mkdir(os.path.join(ckpt_path, exp_name))
 
+
 # Training
 def train(epoch):
     print('\nEpoch: %d' % epoch)
@@ -107,29 +111,40 @@ def train(epoch):
             optimizer.param_groups[0]['lr'] = 2 * args['lr'] / args['lr_decay']
             optimizer.param_groups[1]['lr'] = args['lr'] / args['lr_decay']
 
-        inputs, labels = data
+        inputs, labels, counter = data
         batch_size = inputs.size(0)
         inputs = Variable(inputs).cuda()
         labels = Variable(labels).cuda()
-
+        counter = Variable(counter).cuda()
         optimizer.zero_grad()
-        outputs = net(inputs)
+        outputs, outputs_counter = net(inputs)
+        # outputs = net(inputs)
 
         # BCE loss and dice loss can be used
         criterion_bce = nn.BCELoss()
         criterion_dice = Dice_loss()
-        if not isinstance(outputs, list):
-            loss_bce = criterion_bce(outputs, labels)
-            loss_dice = criterion_dice(outputs, labels)
-        else:
-            loss_bce_each = [None] * len(outputs)
-            loss_dice_each = [None] * len(outputs)
-            for idx in range(len(outputs)):
-                loss_bce_each[idx] = criterion_bce(outputs[idx], labels)
-                loss_dice_each[idx] = criterion_dice(outputs[idx], labels)
-            loss_bce = sum(loss_bce_each)
-            loss_dice = sum(loss_dice_each)
+        # if not isinstance(fnd_out, list):
+        loss_bce = criterion_bce(outputs, labels) + criterion_bce(outputs_counter, counter)
+        loss_dice = criterion_dice(outputs, labels) + criterion_dice(outputs_counter, counter)
+        # loss_bce = criterion_bce(outputs, labels)
+        # loss_dice = criterion_dice(outputs, labels)
+        # else:
+        #     loss_bce = criterion_bce(outputs, labels)
+        #     loss_dice = criterion_dice(outputs, labels)
+        #     for fnd_mask, fpd_mask in zip(fnd_out, fpd_out):
+        #         loss_bce += criterion_bce(fnd_mask, fnd) + criterion_bce(fpd_mask, fpd)
+
+
+        # else:
+        #     loss_bce_each = [None] * len(outputs)
+        #     loss_dice_each = [None] * len(outputs)
+        #     for idx in range(len(outputs)):
+        #         loss_bce_each[idx] = criterion_bce(outputs[idx], labels)
+        #         loss_dice_each[idx] = criterion_dice(outputs[idx], labels)
+        #     loss_bce = sum(loss_bce_each)
+        #     loss_dice = sum(loss_dice_each)
         coeff = loss_dice.item()/loss_bce.item() if loss_dice.item()/loss_bce.item() < 1 else 1
+        # coeff = 1
         loss = coeff*loss_bce + loss_dice
         # loss = loss_bce + loss_dice
         loss.backward()
@@ -140,7 +155,6 @@ def train(epoch):
         log = 'iter: %d | [bce loss: %.5f], [dice loss: %.5f],[Total loss: %.5f], [lr: %.8f]' % \
               (epoch, bce_loss_record.avg, dice_loss_record.avg, train_loss_record.avg, optimizer.param_groups[1]['lr'])
         progress_bar(batch_idx, len(train_loader), log)
-
 
 
 # Testing
@@ -158,13 +172,19 @@ def test(epoch):
             img = Image.open(os.path.join(testing_root, 'us', img_name)).convert('RGB')
             gt = Image.open(os.path.join(testing_root, 'seg', gt_name)).convert('1')
             img_var = Variable(transform(img).unsqueeze(0)).cuda()
-            prediction = np.array(to_pil(net(img_var).data.squeeze(0).cpu()).resize(gt.size))
+            outputs, outputs_counter = net(img_var)
+            prediction = np.array(to_pil(outputs.data.squeeze(0).cpu()).resize(gt.size))
+            prediction_counter = np.array(to_pil(outputs_counter.data.squeeze(0).cpu()).resize(gt.size))
             prediction = crf_refine(np.array(img), prediction)
-            # a=prediction.sum(axis=0).sum(axis=0)
+
             if flag.save_pred:
                 check_mkdir(os.path.join(ckpt_path, exp_name, 'prediction'))
+                check_mkdir(os.path.join(ckpt_path, exp_name, 'prediction_counter'))
                 Image.fromarray(prediction).save(
                     os.path.join(ckpt_path, exp_name, 'prediction', img_name))
+                Image.fromarray(prediction_counter).save(
+                    os.path.join(ckpt_path, exp_name, 'prediction_counter', img_name))
+
             gt = np.array(gt)
             pred = Image.fromarray(prediction).convert('1')
             pred = np.array(pred)

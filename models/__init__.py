@@ -2,3 +2,10 @@ from .Resnet18_UNET.Resnet18_UNET import ResNetUNet
 from .UNETplusplus.resnet18_UNETplusplus import UNETplusplus
 from .DAF.DAF_model import DAF
 from .FPN.FPN import FPN
+from .FPN_DS.FPN_DS import FPN_DS
+from .FPN_DS_V2.FPN_DS_V2 import FPN_DS_V2
+from .FPN_DS_V3.FPN_DS_V3 import FPN_DS_V3
+from .FPN_DS_V4.FPN_DS_V4 import FPN_DS_V4
+from .FPN_Dup.FPN_Dup import FPN_Dup
+from .FPN_multi_task.FPN_multi_task import FPN_multi_task
+from .FPN_multi_task_V2.FPN_multi_task_V2 import FPN_multi_task_V2

@@ -2,9 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0caaf0c6-5118-4ec1-8c66-8077d5563bbf" name="Default Changelist" comment="add readme">
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset_DS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset_miccai2019.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset_multi_task.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluator_miccai2019.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_DS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_miccai2019.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_multi_task.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_DS/FPN_DS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_DS/base_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_DS/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_DS_V2/FPN_DS_V2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_DS_V2/base_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_DS_V2/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_DS_V3/FPN_DS_V3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_DS_V3/base_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_DS_V3/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_DS_V4/FPN_DS_V4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_DS_V4/base_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_DS_V4/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_Dup/FPN_Dup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_Dup/base_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_Dup/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_multi_task/FPN_multi_task.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_multi_task/base_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_multi_task/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_multi_task_V2/FPN_multi_task_V2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_multi_task_V2/base_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/FPN_multi_task_V2/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/experiments_record.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/gen_counter_gt.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DAF" beforeDir="false" afterPath="$PROJECT_DIR$/../DAF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UNET" beforeDir="false" afterPath="$PROJECT_DIR$/../UNET" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UNetPlusPlus_TF" beforeDir="false" afterPath="$PROJECT_DIR$/../UNetPlusPlus_TF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/config_path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluator.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/DAF/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/DAF/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/FPN/FPN.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/FPN/FPN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/FPN/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/FPN/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Resnet18_UNET/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/Resnet18_UNET/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/UNETplusplus/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/UNETplusplus/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
+            <state relative-caret-position="75">
+              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -28,97 +72,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/DAF/config.yaml">
+        <entry file="file://$PROJECT_DIR$/main_multi_task.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="360">
+              <caret line="190" column="39" selection-start-line="190" selection-start-column="37" selection-end-line="190" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/__init__.py">
+        <entry file="file://$PROJECT_DIR$/dataset_miccai2019.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="330">
-                <caret line="22" column="87" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Resnet18_UNET/Resnet18_UNET.py">
+        <entry file="file://$PROJECT_DIR$/main_miccai2019.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="77" column="38" selection-start-line="77" selection-start-column="38" selection-end-line="77" selection-end-column="38" />
+            <state relative-caret-position="315">
+              <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Resnet18_UNET/config.yaml">
+        <entry file="file://$PROJECT_DIR$/evaluator_miccai2019.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/UNETplusplus/config.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/backbone/resnext/resnext101_regular.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/UNETplusplus/UNET_parts.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="63" column="65" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/UNETplusplus/resnet18_UNETplusplus.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -134,8 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>training_root</find>
-      <find>snapshot</find>
       <find>best</find>
       <find>resume</find>
       <find>args</find>
@@ -147,6 +135,25 @@
       <find>DAF</find>
       <find>criterion_dice</find>
       <find>evaluator</find>
+      <find>annos</find>
+      <find>SegmentationBlock</find>
+      <find>train_loader</find>
+      <find>fnd</find>
+      <find>.convert(l')</find>
+      <find>labels</find>
+      <find>mask_list</find>
+      <find>fnd_s2</find>
+      <find>save_pred</find>
+      <find>expend</find>
+      <find>fnd_m2</find>
+      <find>fn_mask5</find>
+      <find>fnd_s5</find>
+      <find>GroupNorm</find>
+      <find>Conv3x3GNReLU</find>
+      <find>batch_size</find>
+      <find>check_mkdir</find>
+      <find>/</find>
+      <find>norm_filter</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,43 +162,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config_path.py" />
-        <option value="$PROJECT_DIR$/dataset.py" />
-        <option value="$PROJECT_DIR$/misc.py" />
-        <option value="$PROJECT_DIR$/models/Resnet18_UNET.py" />
-        <option value="$PROJECT_DIR$/models/Resnet18_UNET/__init__.py" />
-        <option value="$PROJECT_DIR$/loss.py" />
-        <option value="$PROJECT_DIR$/models/Resnet18_UNET/Resnet18_UNET.py" />
-        <option value="$PROJECT_DIR$/models/UNETplusplus/UNETplusplus.py" />
-        <option value="$PROJECT_DIR$/models/UNETplusplus/resnet50_UNETplusplus.py" />
-        <option value="$PROJECT_DIR$/models/UNETplusplus/resnet18_UNETplusplus.py" />
-        <option value="$PROJECT_DIR$/models/UNETplusplus/UNET_parts.py" />
-        <option value="$PROJECT_DIR$/models/DAF/__init__.py" />
-        <option value="$PROJECT_DIR$/models/backbone/resnext/__init__.py" />
-        <option value="$PROJECT_DIR$/models/backbone/resnext/config.py" />
-        <option value="$PROJECT_DIR$/models/backbone/resnext/resnext101_regular.py" />
-        <option value="$PROJECT_DIR$/models/backbone/resnext/resnext_101_32x4d_.py" />
-        <option value="$PROJECT_DIR$/models/backbone/__init__.py" />
         <option value="$PROJECT_DIR$/pretrained/__init__.py" />
         <option value="$PROJECT_DIR$/models/DAF/DAF_model.py" />
         <option value="$PROJECT_DIR$/models/FPN/base_model.py" />
-        <option value="$PROJECT_DIR$/models/__init__.py" />
-        <option value="$PROJECT_DIR$/models/FPN/FPN.py" />
-        <option value="$PROJECT_DIR$/evaluator.py" />
-        <option value="$PROJECT_DIR$/models/FPN/config.yaml" />
         <option value="$PROJECT_DIR$/models/UNETplusplus/config.yaml" />
-        <option value="$PROJECT_DIR$/models/Resnet18_UNET/config.yaml" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/models/DAF/config.yaml" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/evaluator.py" />
+        <option value="$PROJECT_DIR$/models/FPN/FPN.py" />
+        <option value="$PROJECT_DIR$/models/FPN/config.yaml" />
+        <option value="$PROJECT_DIR$/models/FPN_DS/config.yaml" />
+        <option value="$PROJECT_DIR$/models/FPN_DS/base_model.py" />
+        <option value="$PROJECT_DIR$/models/DAF/config.yaml" />
+        <option value="$PROJECT_DIR$/models/FPN_DS/FPN_DS_V2.py" />
+        <option value="$PROJECT_DIR$/models/FPN_DS_V2/base_model.py" />
+        <option value="$PROJECT_DIR$/models/FPN_DS_V2/config.yaml" />
+        <option value="$PROJECT_DIR$/models/FPN_DS_V2/FPN_DS_V2.py" />
+        <option value="$PROJECT_DIR$/models/FPN_DS_V3.py" />
+        <option value="$PROJECT_DIR$/models/FPN_DS_V3/base_model.py" />
+        <option value="$PROJECT_DIR$/models/FPN_DS_V4/base_model.py" />
+        <option value="$PROJECT_DIR$/models/FPN_DS_V4/config.yaml" />
+        <option value="$PROJECT_DIR$/models/FPN_DS_V4/FPN_DS_V4.py" />
+        <option value="$PROJECT_DIR$/models/FPN_DS/experiments_records.md" />
+        <option value="$PROJECT_DIR$/models/FPN_Dup/base_model.py" />
+        <option value="$PROJECT_DIR$/models/FPN_Dup/FPN_Dup.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/models/FPN_Dup/config.yaml" />
+        <option value="$PROJECT_DIR$/loss.py" />
+        <option value="$PROJECT_DIR$/models/FPN_DS/FPN_DS.py" />
+        <option value="$PROJECT_DIR$/dataset_DS.py" />
+        <option value="$PROJECT_DIR$/models/FPN_DS_V3/config.yaml" />
+        <option value="$PROJECT_DIR$/models/FPN_DS_V3/FPN_DS_V3.py" />
+        <option value="$PROJECT_DIR$/main_DS.py" />
+        <option value="$PROJECT_DIR$/dataset.py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/utils/__init__.py" />
+        <option value="$PROJECT_DIR$/utils/gen_counter_gt.py" />
+        <option value="$PROJECT_DIR$/models/FPN_multi_task/base_model.py" />
+        <option value="$PROJECT_DIR$/models/FPN_multi_task/config" />
+        <option value="$PROJECT_DIR$/models/FPN_multi_task/config.yaml" />
+        <option value="$PROJECT_DIR$/models/FPN_multi_task/FPN_multi_task.py" />
+        <option value="$PROJECT_DIR$/dataset_multi_task.py" />
+        <option value="$PROJECT_DIR$/models/FPN_multi_task_V2/base_model.py" />
+        <option value="$PROJECT_DIR$/models/__init__.py" />
+        <option value="$PROJECT_DIR$/models/FPN_multi_task_V2/FPN_multi_task_V2.py" />
+        <option value="$PROJECT_DIR$/models/FPN_multi_task_V2/config.yaml" />
+        <option value="$PROJECT_DIR$/main_multi_task.py" />
+        <option value="$PROJECT_DIR$/dataset_miccai2019.py" />
+        <option value="$PROJECT_DIR$/models/Resnet18_UNET/config.yaml" />
+        <option value="$PROJECT_DIR$/config_path.py" />
+        <option value="$PROJECT_DIR$/evaluator_miccai2019.py" />
+        <option value="$PROJECT_DIR$/models/experiments_record.md" />
+        <option value="$PROJECT_DIR$/main_miccai2019.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1985" />
+    <option name="x" value="1984" />
     <option name="y" value="-4" />
-    <option name="width" value="1615" />
-    <option name="height" value="1054" />
+    <option name="width" value="1617" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -214,14 +243,7 @@
             <path>
               <item name="liver_seg" type="b2602c69:ProjectViewProjectNode" />
               <item name="liver_seg" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="DAF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="liver_seg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="liver_seg" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="Resnet18_UNET" type="462c0819:PsiDirectoryNode" />
+              <item name="pretrained" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -256,7 +278,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main_miccai2019">
+    <configuration name="gen_counter_gt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="liver_seg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/gen_counter_gt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="liver_seg" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -271,7 +315,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="--test" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -279,8 +323,85 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main_DS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="liver_seg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_DS.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_miccai2019" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="liver_seg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_miccai2019.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_multi_task" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="liver_seg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_multi_task.py" />
+      <option name="PARAMETERS" value="-t" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.main_DS" />
+      <item itemvalue="Python.gen_counter_gt" />
+      <item itemvalue="Python.main_multi_task" />
+      <item itemvalue="Python.main_miccai2019" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main_miccai2019" />
+        <item itemvalue="Python.main_multi_task" />
+        <item itemvalue="Python.gen_counter_gt" />
+        <item itemvalue="Python.main_DS" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -297,7 +418,10 @@
       <updated>1559549653371</updated>
       <workItem from="1559549656491" duration="257000" />
       <workItem from="1559550202445" duration="68334000" />
-      <workItem from="1559746343211" duration="8784000" />
+      <workItem from="1559746343211" duration="30970000" />
+      <workItem from="1560325643051" duration="108562000" />
+      <workItem from="1561383645503" duration="63970000" />
+      <workItem from="1562415274751" duration="7017000" />
     </task>
     <task id="LOCAL-00001" summary="add readme">
       <created>1559740525338</created>
@@ -369,11 +493,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559808832573</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add readme">
+      <created>1559808902532</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559808902532</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add readme">
+      <created>1559809096026</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1559809096026</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77375000" />
+    <option name="totallyTimeSpent" value="279110000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -385,31 +523,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1985" y="-4" width="1615" height="1054" extended-state="6" />
+    <frame x="1984" y="-4" width="1617" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21478648" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22307202" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49904397" weight="0.32912722" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840662" weight="0.3396425" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6437221" visible="true" weight="0.4206099" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.64308476" visible="true" weight="0.4090431" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49776927" weight="0.32912722" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49840662" weight="0.32912722" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.35627788" side_tool="true" visible="true" weight="0.4206099" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49713194" weight="0.32912722" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4952199" weight="0.32071504" />
-      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49904397" weight="0.32912722" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.35691524" side_tool="true" weight="0.4079916" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4964946" weight="0.32912722" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49394518" weight="0.32071504" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49776927" weight="0.32912722" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32950923" />
-      <window_info anchor="right" id="SciView" order="4" weight="0.32946378" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.7444232" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
@@ -425,129 +563,62 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>80</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/liver_seg$main.coverage" NAME="main Coverage Results" MODIFIED="1559808426190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/liver_seg$main_DS.coverage" NAME="main_DS Coverage Results" MODIFIED="1561465898013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/liver_seg$gen_counter_gt.coverage" NAME="gen_counter_gt Coverage Results" MODIFIED="1561698920337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/liver_seg$main_miccai2019.coverage" NAME="main_miccai2019 Coverage Results" MODIFIED="1562423123876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/liver_seg$main_multi_task.coverage" NAME="main_multi_task Coverage Results" MODIFIED="1562419696876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/liver_seg$main.coverage" NAME="main Coverage Results" MODIFIED="1560428408030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/Resnet18_UNET.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/1399213632/-1979521425/tokenize.py">
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/1399213632/-806374125/torch/tensor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="451" selection-start-line="451" selection-end-line="451" />
+        <state relative-caret-position="178">
+          <caret line="449" selection-start-line="449" selection-end-line="449" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Resnet18_UNET/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/misc.py">
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/1399213632/-806374125/torch/nn/modules/activation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="130">
+          <caret line="242" column="6" selection-start-line="242" selection-start-column="6" selection-end-line="242" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/1399213632/-806374125/torch/nn/modules/instancenorm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-770">
+          <caret line="134" column="6" selection-start-line="134" selection-start-column="6" selection-end-line="134" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/1399213632/-806374125/torch/serialization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="365" selection-start-line="365" selection-end-line="365" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_DS_V3/base_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-end-line="17" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config_path.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/1399213632/-1979521425/argparse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="1513" selection-start-line="1513" selection-end-line="1513" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="1745" column="33" lean-forward="true" selection-start-line="1745" selection-start-column="33" selection-end-line="1745" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/1399213632/-806374125/torch/nn/modules/module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="488" selection-start-line="488" selection-end-line="488" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/DAF/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/models/backbone/resnext/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="73" selection-start-column="73" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/backbone/resnext/resnext_101_32x4d_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="690" selection-start-line="690" selection-end-line="690" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/backbone/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pretrained/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/DAF/DAF_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="132" column="24" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/1399213632/-806374125/torch/nn/modules/conv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2302">
-          <caret line="319" selection-start-line="319" selection-end-line="319" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/backbone/resnext/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/FPN/base_model.py">
+    <entry file="file://$PROJECT_DIR$/models/FPN_DS_V4/base_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
@@ -557,86 +628,292 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/FPN/config" />
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/1399213632/-806374125/torchsummary/torchsummary.py">
+    <entry file="file://$PROJECT_DIR$/models/FPN_DS_V4/config.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="45">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evaluator.py">
+    <entry file="file://$PROJECT_DIR$/models/FPN_Dup/base_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_DS_V4/FPN_DS_V4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="201" column="8" lean-forward="true" selection-start-line="201" selection-start-column="8" selection-end-line="201" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_Dup/FPN_Dup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-564">
+          <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_DS/experiments_records.md" />
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/1399213632/-806374125/torch/nn/modules/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="493" column="43" lean-forward="true" selection-start-line="493" selection-start-column="43" selection-end-line="493" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_DS/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/1399213632/-806374125/torch/nn/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30150">
+          <caret line="2026" column="45" selection-start-line="2026" selection-start-column="31" selection-end-line="2026" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/1399213632/-806374125/torch/utils/data/dataloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9615">
+          <caret line="657" selection-start-line="657" selection-end-line="657" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/loss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        <state relative-caret-position="381">
+          <caret line="37" column="104" selection-start-line="37" selection-start-column="104" selection-end-line="37" selection-end-column="104" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/1399213632/-806374125/torch/nn/modules/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="490" column="51" lean-forward="true" selection-start-line="490" selection-start-column="51" selection-end-line="490" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_DS_V3/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_DS/FPN_DS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2895">
+          <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_DS_V3/FPN_DS_V3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="190" column="32" lean-forward="true" selection-start-line="190" selection-start-column="32" selection-end-line="190" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/1399213632/-1979521425/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/gen_counter_gt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN/base_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_multi_task/config" />
+    <entry file="file://$PROJECT_DIR$/models/FPN_Dup/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_multi_task/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_multi_task/base_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_multi_task_V2/base_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_multi_task/FPN_multi_task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_multi_task_V2/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FPN_multi_task_V2/FPN_multi_task_V2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_multi_task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_DS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="82" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/FPN/FPN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="1395">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/backbone/resnext/resnext101_regular.py">
+    <entry file="file://$PROJECT_DIR$/models/FPN_DS_V2/FPN_DS_V2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="190">
+          <caret line="94" column="46" selection-start-line="94" selection-start-column="46" selection-end-line="94" selection-end-column="46" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/UNETplusplus/UNET_parts.py">
+    <entry file="file://$PROJECT_DIR$/main_DS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="63" column="65" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/UNETplusplus/resnet18_UNETplusplus.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="2775">
+          <caret line="206" column="13" selection-start-line="206" selection-start-column="13" selection-end-line="206" selection-end-column="13" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Resnet18_UNET/Resnet18_UNET.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="77" column="38" selection-start-line="77" selection-start-column="38" selection-end-line="77" selection-end-column="38" />
+        <state relative-caret-position="75">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/FPN/config.yaml">
+    <entry file="file://$PROJECT_DIR$/dataset_miccai2019.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/UNETplusplus/config.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -647,40 +924,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+    <entry file="file://$PROJECT_DIR$/misc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        <state relative-caret-position="435">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/DAF/config.yaml">
+    <entry file="file://$PROJECT_DIR$/models/FPN/config.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/main_multi_task.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
+        <state relative-caret-position="360">
+          <caret line="190" column="39" selection-start-line="190" selection-start-column="37" selection-end-line="190" selection-end-column="39" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
+    <entry file="file://$PROJECT_DIR$/config_path.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="56" selection-start-line="6" selection-start-column="54" selection-end-line="7" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluator_miccai2019.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/experiments_record.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="330">
-            <caret line="22" column="87" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
+          <first_editor relative-caret-position="225">
+            <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_miccai2019.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
